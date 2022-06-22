@@ -8,6 +8,7 @@ body {
   background-color: var(--light-color);
   color: var(--dark-color);
   text-align: var(--dark-color);
+  margin: 0;
 }
 
 /* default parameters for flex */
@@ -21,12 +22,13 @@ body {
 /* section title styling */
 section {
     padding: 0;
-    margin: 10px;
+    margin: 10px 20px 0px 0px;
 }
 
 .section-title {
   color: var(--med-color);
   margin: 0 20px 0 150px;
+  align-self: flex-start;
 }
 
 /* clean ul styling & text decoration*/
@@ -46,6 +48,7 @@ header a,
 header {
   background: var(--dark-color);
   color: var(--light-color);
+  padding: 0 10px;
 }
 
 header h1 {
@@ -63,6 +66,10 @@ header nav ul li {
 }
 
 /* hero */
+
+#hero {
+
+}
 
 /* about me */
 #about-me h2 {
@@ -82,14 +89,24 @@ header nav ul li {
 
 .project {
     background-color: var(--med-color);
-    margin: 10px 5px 0 0; 
-    width: 400px;
+    margin: 15px 0 0 0; 
+    /* width: 400px; */
+    flex-basis: 45%;
+    min-height: 150px;
 }
 
 #other-projects {
-    width: 90%;
+    flex-basis: 100%;
+    justify-content: space-between;
 }
 
+.project div {
+  margin: 5px;
+}
+
+#spotlight {
+
+}
 
 /* contact me */
 
@@ -104,6 +121,7 @@ footer {
   background-color: var(--dark-color);
   color: var(--light-color);
   padding: 8px;
+  padding: 0 10px;
 }
 
 footer h2 {
