@@ -8,7 +8,7 @@ A website that showcases my projects for profesional network.
 * CSS
 
 ## Website
-[https://lernantino.github.io/personal-portfolio/](https://mnwana.github.io/personal-portfolio/)
+[https://mnwana.github.io/personal-portfolio/](https://mnwana.github.io/personal-portfolio/)
 
 ## Screenshot
 ![Image of portfolio](./assets/images/screenshot.png "Portfolio")
