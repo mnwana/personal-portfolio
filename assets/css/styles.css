@@ -7,7 +7,6 @@
 body {
   background-color: var(--light-color);
   color: var(--dark-color);
-  text-align: var(--dark-color);
   margin: 0;
   padding: 0;
   font-family: Helvetica,'Arial Narrow',Arial, Helvetica, sans-serif;
@@ -22,12 +21,17 @@ body {
 }
 
 /* section styling */
+section {
+  margin-bottom: 25px;
+}
 
 .section-title {
   color: var(--med-color);
   margin: 10px 5px 0px 0px;
+  padding: 10px;
   font-size: 20px;
   flex-basis: 20%;
+  border-right: 5px solid var(--dark-color);
 }
 
 .section-title h2 {
@@ -46,8 +50,7 @@ ul {
   list-style: none;
 }
 
-header a,
-#contact-me a {
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -68,8 +71,16 @@ header h1 {
   text-align: left;
 }
 
+#heading img{
+  max-height:50px;
+  align-self: center;
+  padding-left: 10px;
+}
+
+
 header nav ul {
   align-items: center;
+  margin-bottom: 2px;
 }
 
 header nav ul li {
@@ -87,8 +98,22 @@ header nav ul li {
 }
 
 /* about me */
-#about-me h2 {
-}
+
+/* #about-me-bio {
+  max-height: 300px;
+} */
+
+/* #about-me-bio img{
+  max-height: 200px;
+  align-self: center;
+}*/
+
+#about-me-bio p {
+  font-size: 20px;
+  text-align: center;
+  /* flex-basis: 75%; */
+} 
+
 
 /* projects */
 
@@ -98,20 +123,53 @@ header nav ul li {
 
 .project {
     background-color: var(--med-color);
-    margin: 15px 20px 0 0; 
-    /* width: 400px; */
+    margin: 15px 0 0 0; 
     min-height: 250px;
     background-size:cover;
-    flex: 1;
+    flex-basis: 48%;
+    display: flex;
+    align-items:flex-end;
+    border-radius: 10px;
+    border: 5px solid var(--dark-color);
+}
+
+.project-bio {
+  background-color: var(--light-color);
+  height: fit-content;
+  width: fit-content;
+  margin: 0;
+  border: 5px solid var(--med-color);
+  padding: 0 5px 2px 5px;
+  white-space:nowrap;
+  border-radius: 0 10px 0 4px;
+}
+
+.project-bio h3 {
+  font-size: 20px;
+  margin: 0 0;
+  border-bottom: 1px solid var(--med-color);
+  max-width: fit-content;
+  padding-bottom: .5px;
+}
+
+.project-bio h4 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 auto;
 }
 
 #other-projects {
-    flex-basis: 100%;
-    justify-content: space-between;
+  flex-basis: 100%;
+  justify-content: space-between;
 }
 
-.project div {
-  margin: 5px;
+#spotlight .project-bio h3 {
+  font-size: 25px;
+}
+
+
+#spotlight .project-bio h4 {
+  font-size: 20px;
 }
 
 #spotlight {
@@ -140,7 +198,19 @@ header nav ul li {
   padding: 0 30px 0 0;
 }
 
+#contact-info.section-content {
+  margin-bottom: 0;
+}
+
+#contact-info ul li {
+  text-decoration: underline;
+}
+
 /* footer */
+
+footer {
+  margin-top: 25px;
+}
 
 footer h2 {
   background-color: var(--dark-color);
