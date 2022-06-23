@@ -234,69 +234,75 @@ footer h2 {
 }
 
 /* media query for smaller desktop screens and smaller */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
+  header nav ul {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 
+  .flex-row {
+    justify-content: center;
+  }
+
+  #heading {
+    justify-content: space-around;
+    width: 50%;
+   }
+
+   .section-content {
+     margin-left: 10px;
+   }
+  .section-title {
+    width:max-content;
+    flex-basis: 25%;
+    padding: 0;
+    border-width: 2px;
+  }
+  .section-title h2 {
+    text-align: center;
+  }
+
+  .section-content {
+  flex-basis: 65%;
+  }
+
+  .project {
+    border-width: 2px;
+  }
+
+  #contact-info ul li a {
+    margin: 0px 20px;
+  }
 }
 
 /* media query for phones and smaller */
 @media screen and (max-width: 575px) {
-  #heading {
-   justify-content: space-around;
-   width: 100%;
-  }
-
-  header nav {
-    margin-top: 7px 0 0 0;
-    
-
-  }
-
-  header nav ul {
-    margin-block-start: 0px;
-    text-align: center;
-  }
-
-  header nav ul li {
-    flex-basis: 47%;
-  }
 
   section {
     flex-direction: column;
+    justify-content: center;
+}
+    .section-title {
+      border-right: none;
+      margin: 0;
+    
   }
 
-  .section-title {
-    border-right: none;
-  }
+
 
   .section-title h2{
     text-align: center;
     border-bottom: 1px solid var(--dark-color);
     margin: 0 100px;
-
+    width: 100%;
   }
+
 
 
   #about-me-bio, .project-list {
-    margin: 0px 5px;
+    margin: 0px 40px;
 
   }
 
-  #contact-info {
-    padding: 0;
-    margin: 0 20px;
-    justify-content: center;
-  }
-
-  #contact-info h2 {
-    font-size: 15px;
-  }
-
-  #contact-info ul {
-    padding-left: 0;
-  }
-
-  #contact-me .section-title h2 {
-    width:max-content
-  }
  
 }
